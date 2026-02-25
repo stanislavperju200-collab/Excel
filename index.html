@@ -1,0 +1,990 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Excel – Prezentare Interactivă</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="site-header" id="site-header">
+    <div class="header-inner">
+      <div class="logo">
+        <span class="logo-icon">⊞</span>
+        <span class="logo-text">Excel<span class="logo-accent">Prezentare</span></span>
+      </div>
+
+      <nav class="main-nav" id="main-nav">
+        <ul class="nav-list">
+          <li><a href="#slide-1" class="nav-link" data-slide="0">Intro</a></li>
+          <li><a href="#slide-2" class="nav-link" data-slide="1">Elementele interfeței</a></li>
+          <li><a href="#slide-3" class="nav-link" data-slide="2">Operații de bază</a></li>
+          <li><a href="#slide-4" class="nav-link" data-slide="3">Sistemul de asistență</a></li>
+          <li><a href="#slide-5" class="nav-link" data-slide="4">Opțiuni predefinite</a></li>
+          <li><a href="#slide-6" class="nav-link" data-slide="5">Moduri de vizualizare</a></li>
+          <li><a href="#slide-7" class="nav-link" data-slide="6">Indicatoare mouse</a></li>
+          <li><a href="#slide-8" class="nav-link" data-slide="7">Formatarea celulelor</a></li>
+          <li><a href="#slide-9" class="nav-link" data-slide="8">Operații celule/rânduri</a></li>
+          <li><a href="#slide-10" class="nav-link" data-slide="9">Protejarea datelor</a></li>
+          <li><a href="#slide-11" class="nav-link" data-slide="10">Imprimarea</a></li>
+          <li><a href="#slide-12" class="nav-link" data-slide="11">Parametrii paginii</a></li>
+        </ul>
+      </nav>
+
+      <button class="hamburger" id="hamburger" aria-label="Deschide meniu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===== PROGRESS BAR ===== -->
+  <div class="progress-bar-wrap">
+    <div class="progress-bar" id="progress-bar"></div>
+  </div>
+
+  <!-- ===== MAIN ===== -->
+  <main id="main-container">
+
+    <!-- SLIDE 1 – Title -->
+    <section class="slide slide--dark" id="slide-1" data-index="0">
+      <div class="hex-deco hex-deco--1"></div>
+      <div class="hex-deco hex-deco--2"></div>
+      <div class="hex-deco hex-deco--3"></div>
+      <div class="hex-deco hex-deco--4"></div>
+
+      <div class="slide-inner slide-inner--center">
+        <div class="slide-number animate-item">01 / 12</div>
+
+        <div class="title-block animate-item delay-1">
+          <h1 class="main-title">Aplicația de Calcul Tabelar</h1>
+          <div class="accent-line">
+            <span class="accent-pink"></span>
+            <span class="accent-blue"></span>
+          </div>
+          <p class="main-subtitle">Excel — Prezentare Interactivă</p>
+        </div>
+
+        <p class="intro-desc animate-item delay-3">
+          Explorați interfața, funcțiile și opțiunile aplicației Microsoft Excel
+          prin intermediul acestei prezentări interactive cu 12 secțiuni tematice.
+        </p>
+      </div>
+    </section>
+
+    <!-- SLIDE 2 – Elementele interfeței -->
+    <section class="slide slide--light" id="slide-2" data-index="1">
+      <div class="hex-deco hex-deco--tr"></div>
+      <div class="slide-inner">
+        <div class="slide-header animate-item">
+          <div class="slide-number">02 / 12</div>
+        </div>
+        <h2 class="slide-title animate-item delay-1">Elementele interfeței Excel</h2>
+
+        <div class="slide-image slide-image--wide animate-item delay-2">
+          <img src="images/image.png" alt="Panglica Home din Excel cu grupuri de comenzi" loading="lazy" />
+        </div>
+
+        <div class="cards-grid cards-grid--3 animate-item delay-3">
+
+          <div class="card card--pink">
+            <div class="card-icon">📌</div>
+            <h3>Bara de titlu</h3>
+            <p>Afișează <strong>numele fișierului</strong> și al aplicației. Conține butoanele Minimize, Maximize, Close.</p>
+          </div>
+
+          <div class="card card--blue">
+            <div class="card-icon">🎀</div>
+            <h3>Panglica (Ribbon)</h3>
+            <p>Conține <strong>file tematice</strong> (Home, Insert, Page Layout…) organizate în grupuri de comenzi.</p>
+          </div>
+
+          <div class="card card--pink">
+            <div class="card-icon">𝑓𝑥</div>
+            <h3>Bara de formule</h3>
+            <p>Afișează <strong>conținutul celulei active</strong> — valoare, text sau formulă.</p>
+          </div>
+
+          <div class="card card--blue">
+            <div class="card-icon">▦</div>
+            <h3>Celulele</h3>
+            <p>Unitatea de bază a foii de calcul. Identificate prin <strong>coloană + rând</strong>: A1, B2, C10…</p>
+          </div>
+
+          <div class="card card--pink">
+            <div class="card-icon">📑</div>
+            <h3>Foi de calcul</h3>
+            <p><strong>Sheet tabs</strong> în josul ecranului — Sheet1, Sheet2. Click pe + pentru foaie nouă.</p>
+          </div>
+
+          <div class="card card--blue">
+            <div class="card-icon">📊</div>
+            <h3>Bara de stare</h3>
+            <p>Afișează informații despre selecție: <strong>SUM, COUNT, AVERAGE</strong> și moduri de vizualizare.</p>
+          </div>
+
+        </div>
+
+        <div class="theory-block animate-item delay-3">
+          <h3>📖 Suport teoretic</h3>
+          <p>Interfața Excel este compusă din mai multe elemente care facilitează lucrul cu datele. Fiecare element are un rol specific în procesul de creare și editare a foilor de calcul.</p>
+          <h3>📋 Pași de parcurs</h3>
+          <ol>
+            <li>Deschideți aplicația Microsoft Excel</li>
+            <li>Identificați Bara de titlu în partea de sus a ferestrei</li>
+            <li>Observați Panglica (Ribbon) cu filele Home, Insert, Page Layout etc.</li>
+            <li>Localizați Bara de formule sub Ribbon (afișează conținutul celulei active)</li>
+            <li>Faceți click pe o celulă pentru a o selecta — observați referința în Name Box (ex: A1)</li>
+            <li>Observați foile de calcul (Sheet tabs) în partea de jos</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDE 3 – Operații de bază -->
+    <section class="slide slide--dark" id="slide-3" data-index="2">
+      <div class="hex-deco hex-deco--bl"></div>
+      <div class="slide-inner">
+        <div class="slide-header animate-item">
+          <div class="slide-number">03 / 12</div>
+        </div>
+        <h2 class="slide-title animate-item delay-1">Operații de bază</h2>
+
+        <div class="slide-images animate-item delay-2">
+          <img src="images/image (1).png" alt="Tab Insert Excel cu date 1,2,3,4 introduse în celule" loading="lazy" class="img-large" />
+          <img src="images/image (2).png" alt="Proprietățile fișierului Book1.xlsx în File Explorer" loading="lazy" class="img-small" />
+        </div>
+
+        <div class="list-grid animate-item delay-3">
+
+          <div class="list-card">
+            <div class="list-card-head">
+              <span class="list-icon">✏️</span>
+              <h3>Introducere date</h3>
+            </div>
+            <ul>
+              <li>Text, numere, date calendaristice</li>
+              <li>Formule începând cu <code>=</code></li>
+            </ul>
+          </div>
+
+          <div class="list-card">
+            <div class="list-card-head">
+              <span class="list-icon">🖱️</span>
+              <h3>Selectare</h3>
+            </div>
+            <ul>
+              <li>Celule individuale sau range <code>A1:C5</code></li>
+              <li>Coloane / rânduri întregi</li>
+            </ul>
+          </div>
+
+          <div class="list-card">
+            <div class="list-card-head">
+              <span class="list-icon">📋</span>
+              <h3>Copiere / Lipire</h3>
+            </div>
+            <ul>
+              <li><kbd>Ctrl+C</kbd> / <kbd>Ctrl+V</kbd></li>
+              <li>Paste Special — valori, formate</li>
+            </ul>
+          </div>
+
+          <div class="list-card">
+            <div class="list-card-head">
+              <span class="list-icon">↕️</span>
+              <h3>Mutare date</h3>
+            </div>
+            <ul>
+              <li>Drag &amp; Drop cu mouse-ul</li>
+              <li>Cut <kbd>Ctrl+X</kbd> + Paste</li>
+            </ul>
+          </div>
+
+          <div class="list-card">
+            <div class="list-card-head">
+              <span class="list-icon">📄</span>
+              <h3>Foi de calcul</h3>
+            </div>
+            <ul>
+              <li>Adăugare (click <strong>+</strong>), ștergere, redenumire</li>
+              <li>Mutare / copiere între registre</li>
+            </ul>
+          </div>
+
+          <div class="list-card">
+            <div class="list-card-head">
+              <span class="list-icon">📁</span>
+              <h3>Registrul de calcul</h3>
+            </div>
+            <ul>
+              <li>Fișier <code>.xlsx</code> cu foi multiple</li>
+              <li>Salvare, deschidere, închidere</li>
+            </ul>
+          </div>
+
+        </div>
+
+        <div class="theory-block animate-item delay-3">
+          <h3>📖 Suport teoretic</h3>
+          <p>Operațiile de bază în Excel includ introducerea datelor, selectarea celulelor, copierea, lipirea și mutarea informațiilor. Registrul de calcul (workbook) conține una sau mai multe foi de calcul (worksheets).</p>
+          <h3>📋 Pași de parcurs</h3>
+          <ol>
+            <li>Faceți click pe celula A1 și tastați un text sau număr — apăsați Enter pentru confirmare</li>
+            <li>Pentru a selecta un range, faceți click pe A1, țineți Shift și click pe C5</li>
+            <li>Copiați selecția cu Ctrl+C, navigați la destinație și lipiți cu Ctrl+V</li>
+            <li>Pentru mutare: selectați, Ctrl+X, apoi Ctrl+V la destinație</li>
+            <li>Adăugați o foaie nouă: click pe butonul + lângă Sheet tabs</li>
+            <li>Redenumiți foaia: dublu-click pe tab-ul foii</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDE 4 – Sistemul de asistență -->
+    <section class="slide slide--light" id="slide-4" data-index="3">
+      <div class="hex-deco hex-deco--tr"></div>
+      <div class="slide-inner">
+        <div class="slide-header animate-item">
+          <div class="slide-number">04 / 12</div>
+        </div>
+        <h2 class="slide-title animate-item delay-1">Sistemul de asistență</h2>
+
+        <div class="assist-grid animate-item delay-2">
+
+          <div class="assist-item">
+            <div class="assist-key">F1</div>
+            <div class="assist-desc">
+              <h3>Help Excel</h3>
+              <p>Deschide panoul de ajutor cu documentație completă și exemple.</p>
+            </div>
+          </div>
+
+          <div class="assist-item">
+            <div class="assist-key">🔍</div>
+            <div class="assist-desc">
+              <h3>Tell Me / Spune-mi</h3>
+              <p>Bara de căutare din Ribbon — găsește și execută comenzi rapid fără să le cunoști locația.</p>
+            </div>
+          </div>
+
+          <div class="assist-item">
+            <div class="assist-key">🌐</div>
+            <div class="assist-desc">
+              <h3>Smart Lookup</h3>
+              <p>Căutare online integrată (Bing) direct din aplicație, fără a părăsi Excel.</p>
+            </div>
+          </div>
+
+          <div class="assist-item">
+            <div class="assist-key">💬</div>
+            <div class="assist-desc">
+              <h3>Tooltip-uri</h3>
+              <p>Descrieri detaliate apar la hover pe orice buton din Ribbon.</p>
+            </div>
+          </div>
+
+          <div class="assist-item">
+            <div class="assist-key">🔗</div>
+            <div class="assist-desc">
+              <h3>Microsoft Support</h3>
+              <p>support.microsoft.com — ghiduri oficiale, actualizate constant.</p>
+            </div>
+          </div>
+
+          <div class="assist-item">
+            <div class="assist-key">👥</div>
+            <div class="assist-desc">
+              <h3>Comunități online</h3>
+              <p>Forumuri, tutoriale YouTube, Microsoft Answers — soluții din comunitate.</p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="theory-block animate-item delay-3">
+          <h3>📖 Suport teoretic</h3>
+          <p>Excel oferă multiple modalități de asistență: Help integrat, bara Tell Me pentru căutare rapidă de comenzi, Smart Lookup pentru informații online și tooltip-uri la hover pe butoane.</p>
+          <h3>📋 Pași de parcurs</h3>
+          <ol>
+            <li>Apăsați tasta F1 pentru a deschide panoul Help</li>
+            <li>Utilizați bara "Tell me what you want to do" din Ribbon pentru a căuta o comandă</li>
+            <li>Selectați un cuvânt și folosiți Smart Lookup (Review > Smart Lookup) pentru informații online</li>
+            <li>Plasați cursorul peste orice buton din Ribbon pentru a vedea tooltip-ul descriptiv</li>
+            <li>Accesați support.microsoft.com pentru documentație oficială</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDE 5 – Opțiuni predefinite -->
+    <section class="slide slide--dark" id="slide-5" data-index="4">
+      <div class="hex-deco hex-deco--bl"></div>
+      <div class="slide-inner">
+        <div class="slide-header animate-item">
+          <div class="slide-number">05 / 12</div>
+        </div>
+        <h2 class="slide-title animate-item delay-1">Modificarea opțiunilor predefinite</h2>
+
+        <div class="options-layout animate-item delay-2">
+          <div class="options-path">
+            <span class="path-step">File</span>
+            <span class="path-arrow">›</span>
+            <span class="path-step path-step--active">Options</span>
+          </div>
+
+          <div class="slide-image slide-image--dialog">
+            <img src="images/image (3).png" alt="Fereastra Excel Options - secțiunea General" loading="lazy" />
+          </div>
+
+          <div class="options-grid">
+
+            <div class="option-card">
+              <span class="option-icon">⚙️</span>
+              <div>
+                <h3>General</h3>
+                <p>Font implicit, dimensiune font, număr de foi noi la creare registru.</p>
+              </div>
+            </div>
+
+            <div class="option-card">
+              <span class="option-icon">🔢</span>
+              <div>
+                <h3>Formulas</h3>
+                <p>Calcul automat sau manual, precizie la numărul de zecimale afișate.</p>
+              </div>
+            </div>
+
+            <div class="option-card">
+              <span class="option-icon">🌍</span>
+              <div>
+                <h3>Language</h3>
+                <p>Limbă de afișare interfață și limbă de editare/verificare ortografică.</p>
+              </div>
+            </div>
+
+            <div class="option-card">
+              <span class="option-icon">💾</span>
+              <div>
+                <h3>Save</h3>
+                <p>Format implicit (.xlsx / .xls), interval AutoSave și locație implicită.</p>
+              </div>
+            </div>
+
+            <div class="option-card">
+              <span class="option-icon">🎀</span>
+              <div>
+                <h3>Personalizare Ribbon</h3>
+                <p>Adăugare sau eliminare file și grupe de comenzi din Ribbon.</p>
+              </div>
+            </div>
+
+            <div class="option-card">
+              <span class="option-icon">⚡</span>
+              <div>
+                <h3>Quick Access Toolbar</h3>
+                <p>Comenzi frecvent utilizate, accesibile cu un singur click deasupra Ribbon.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="theory-block animate-item delay-3">
+          <h3>📖 Suport teoretic</h3>
+          <p>Opțiunile predefinite ale Excel pot fi modificate din File > Options. Aici se configurează fontul implicit, limba, intervalul de auto-salvare, calculul formulelor și personalizarea Ribbon-ului.</p>
+          <h3>📋 Pași de parcurs</h3>
+          <ol>
+            <li>Accesați File > Options din meniul principal</li>
+            <li>În secțiunea General, modificați fontul și dimensiunea implicită</li>
+            <li>În secțiunea Formulas, alegeți între calcul Automatic sau Manual</li>
+            <li>În secțiunea Save, setați intervalul AutoSave și formatul implicit (.xlsx)</li>
+            <li>În secțiunea Language, adăugați sau schimbați limba de afișare</li>
+            <li>Personalizați Ribbon-ul: adăugați tab-uri sau comenzi noi din Customize Ribbon</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDE 6 – Moduri de vizualizare -->
+    <section class="slide slide--light" id="slide-6" data-index="5">
+      <div class="hex-deco hex-deco--tr"></div>
+      <div class="slide-inner">
+        <div class="slide-header animate-item">
+          <div class="slide-number">06 / 12</div>
+        </div>
+        <h2 class="slide-title animate-item delay-1">Moduri de vizualizare</h2>
+
+        <div class="slide-image slide-image--wide animate-item delay-2">
+          <img src="images/image (4).png" alt="Tab View din Excel - Ribbon cu opțiunile de vizualizare" loading="lazy" />
+        </div>
+
+        <div class="view-grid animate-item delay-3">
+
+          <div class="view-card view-card--active">
+            <div class="view-icon">📋</div>
+            <h3>Normal</h3>
+            <p>Vizualizare standard de lucru zilnic.</p>
+          </div>
+
+          <div class="view-card">
+            <div class="view-icon">📄</div>
+            <h3>Page Layout</h3>
+            <p>Vizualizare cu margini, antet și subsol de pagină.</p>
+          </div>
+
+          <div class="view-card">
+            <div class="view-icon">⬛</div>
+            <h3>Page Break Preview</h3>
+            <p>Afișare și ajustare salturi de pagină înainte de tipărire.</p>
+          </div>
+
+          <div class="view-card">
+            <div class="view-icon">🔍</div>
+            <h3>Zoom</h3>
+            <p>10%–400% · <kbd>Ctrl</kbd>+scroll mouse pentru zoom rapid.</p>
+          </div>
+
+          <div class="view-card">
+            <div class="view-icon">🧊</div>
+            <h3>Freeze Panes</h3>
+            <p>Blocare rânduri / coloane la derulare — anteturi vizibile permanent.</p>
+          </div>
+
+          <div class="view-card">
+            <div class="view-icon">⊞</div>
+            <h3>Split</h3>
+            <p>Împărțirea ferestrei în 2 sau 4 panouri independente.</p>
+          </div>
+
+          <div class="view-card view-card--wide">
+            <div class="view-icon">👁️</div>
+            <h3>Vizualizare formule</h3>
+            <p>Apăsați <kbd>Ctrl</kbd>+<kbd>`</kbd> (backtick) pentru a afișa formulele în loc de rezultate.</p>
+          </div>
+
+        </div>
+
+        <div class="theory-block animate-item delay-3">
+          <h3>📖 Suport teoretic</h3>
+          <p>Excel oferă mai multe moduri de vizualizare pentru diferite scopuri: Normal pentru lucrul zilnic, Page Layout pentru previzualizare tipărire, și Page Break Preview pentru gestionarea salturilor de pagină.</p>
+          <h3>📋 Pași de parcurs</h3>
+          <ol>
+            <li>Accesați tab-ul View din Ribbon</li>
+            <li>Selectați Normal, Page Layout sau Page Break Preview</li>
+            <li>Folosiți Zoom (Ctrl + scroll mouse) pentru mărire/micșorare</li>
+            <li>Activați Freeze Panes: View > Freeze Panes > Freeze Top Row</li>
+            <li>Folosiți Split pentru a împărți fereastra în panouri</li>
+            <li>Apăsați Ctrl+` (backtick) pentru vizualizarea formulelor</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDE 7 – Indicatoare mouse -->
+    <section class="slide slide--dark" id="slide-7" data-index="6">
+      <div class="hex-deco hex-deco--center"></div>
+      <div class="slide-inner">
+        <div class="slide-header animate-item">
+          <div class="slide-number">07 / 12</div>
+        </div>
+        <h2 class="slide-title animate-item delay-1">Tipuri de indicatoare mouse</h2>
+
+        <div class="cursor-grid animate-item delay-2">
+
+          <div class="cursor-card">
+            <div class="cursor-symbol cursor-symbol--select">⊕</div>
+            <h3>Cursor normal</h3>
+            <p>Cruce albă — <strong>selectare celule</strong>. Cursor implicit la navigare.</p7>
+          </div>
+
+          <div class="cursor-card">
+            <div class="cursor-symbol cursor-symbol--fill">+</div>
+            <h3>Fill Handle</h3>
+            <p>Cruce neagră în colțul dreapta-jos — <strong>completare/copiere serie</strong>.</p>
+          </div>
+
+          <div class="cursor-card">
+            <div class="cursor-symbol cursor-symbol--move">✥</div>
+            <h3>Cursor mutare</h3>
+            <p>Săgeți în 4 direcții — <strong>drag &amp; drop</strong> celule sau range-uri.</p>
+          </div>
+
+          <div class="cursor-card">
+            <div class="cursor-symbol cursor-symbol--resize">↔</div>
+            <h3>Cursor redimensionare</h3>
+            <p>Săgeată dublă — <strong>redimensionare coloane / rânduri</strong> prin tragere.</p>
+          </div>
+
+          <div class="cursor-card">
+            <div class="cursor-symbol cursor-symbol--text">I</div>
+            <h3>Cursor I-beam</h3>
+            <p>Bara verticală I — <strong>editare text</strong> în interiorul celulei active.</p>
+          </div>
+
+          <div class="cursor-card">
+            <div class="cursor-symbol cursor-symbol--link">👆</div>
+            <h3>Cursor hiperlink</h3>
+            <p>Mânuță indicatoare — acces <strong>link-uri</strong> și referințe externe.</p>
+          </div>
+
+        </div>
+
+        <div class="theory-block animate-item delay-3">
+          <h3>📖 Suport teoretic</h3>
+          <p>Cursorul mouse-ului se schimbă în funcție de poziția sa în foaia de calcul, indicând diferite operații posibile: selectare, completare serie, mutare, redimensionare sau editare text.</p>
+          <h3>📋 Pași de parcurs</h3>
+          <ol>
+            <li>Poziționați cursorul pe o celulă — observați crucea albă (selecție)</li>
+            <li>Deplasați cursorul pe colțul dreapta-jos al celulei — crucea neagră (Fill Handle)</li>
+            <li>Trageți Fill Handle în jos pentru a completa automat o serie</li>
+            <li>Poziționați cursorul pe marginea unei celule selectate — apare crucea cu 4 săgeți (mutare)</li>
+            <li>Poziționați cursorul pe bordura dintre două coloane — apare săgeata dublă (redimensionare)</li>
+            <li>Dublu-click pe celulă — cursorul I-beam pentru editare text</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDE 8 – Formatarea celulelor -->
+    <section class="slide slide--light" id="slide-8" data-index="7">
+      <div class="hex-deco hex-deco--tr"></div>
+      <div class="slide-inner">
+        <div class="slide-header animate-item">
+          <div class="slide-number">08 / 12</div>
+        </div>
+        <h2 class="slide-title animate-item delay-1">Formatarea celulelor</h2>
+
+        <div class="slide-image slide-image--wide animate-item delay-2">
+          <img src="images/image (5).png" alt="Panglica Home din Excel cu opțiunile de formatare" loading="lazy" />
+        </div>
+
+        <div class="format-tabs-wrap animate-item delay-3">
+          <div class="format-tabs" role="tablist">
+            <button class="ftab ftab--active" data-tab="number" role="tab">Number</button>
+            <button class="ftab" data-tab="align" role="tab">Alignment</button>
+            <button class="ftab" data-tab="font" role="tab">Font</button>
+            <button class="ftab" data-tab="border" role="tab">Border</button>
+            <button class="ftab" data-tab="fill" role="tab">Fill</button>
+            <button class="ftab" data-tab="cond" role="tab">Cond.</button>
+          </div>
+
+          <div class="ftab-content">
+            <div class="ftab-panel ftab-panel--active" id="tab-number">
+              <div class="format-pills">
+                <span class="fpill">General</span><span class="fpill fpill--active">Number</span>
+                <span class="fpill">Currency</span><span class="fpill">Date</span>
+                <span class="fpill">Percentage</span><span class="fpill">Scientific</span>
+                <span class="fpill">Text</span><span class="fpill">Fraction</span>
+              </div>
+              <p>Controlează modul în care Excel <strong>afișează valorile numerice</strong> — zecimale, simbol monedă, format dată.</p>
+            </div>
+            <div class="ftab-panel" id="tab-align">
+              <div class="format-pills">
+                <span class="fpill">Stânga</span><span class="fpill fpill--active">Centru</span>
+                <span class="fpill">Dreapta</span><span class="fpill">Sus</span>
+                <span class="fpill">Mijloc</span><span class="fpill">Jos</span>
+                <span class="fpill">Wrap Text</span><span class="fpill">Merge Cells</span>
+              </div>
+              <p>Alinierea <strong>orizontală și verticală</strong> a conținutului, rotire text, îmbinare celule.</p>
+            </div>
+            <div class="ftab-panel" id="tab-font">
+              <div class="format-pills">
+                <span class="fpill"><strong>Bold</strong></span><span class="fpill"><em>Italic</em></span>
+                <span class="fpill"><u>Underline</u></span><span class="fpill">Strikethrough</span>
+                <span class="fpill fpill--active">Calibri 11</span><span class="fpill">Culoare</span>
+              </div>
+              <p>Tip font, dimensiune, stiluri (<strong>B / I / U</strong>), culoarea textului și efecte speciale.</p>
+            </div>
+            <div class="ftab-panel" id="tab-border">
+              <div class="format-pills">
+                <span class="fpill fpill--active">Toate laturile</span><span class="fpill">Exterior</span>
+                <span class="fpill">Gros exterior</span><span class="fpill">Linie subțire</span>
+                <span class="fpill">Linie dublă</span><span class="fpill">Fără bordură</span>
+              </div>
+              <p>Tip linie (solidă, punctată, dublă), culoare și aplicare selectivă pe laturi.</p>
+            </div>
+            <div class="ftab-panel" id="tab-fill">
+              <div class="format-pills">
+                <span class="fpill fpill--active">Culoare solidă</span><span class="fpill">Gradient</span>
+                <span class="fpill">Model</span><span class="fpill">Fără umplere</span>
+              </div>
+              <p>Culoare de fundal a celulei, modele grafice sau degradeuri de culoare.</p>
+            </div>
+            <div class="ftab-panel" id="tab-cond">
+              <div class="format-pills">
+                <span class="fpill fpill--active">Mai mare decât</span><span class="fpill">Top 10%</span>
+                <span class="fpill">Data Bars</span><span class="fpill">Color Scale</span>
+                <span class="fpill">Icon Sets</span><span class="fpill">Regulă nouă</span>
+              </div>
+              <p><strong>Formatare condiționată</strong> — reguli automate de colorare bazate pe valorile din celule.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="theory-block animate-item delay-3">
+          <h3>📖 Suport teoretic</h3>
+          <p>Formatarea celulelor controlează modul în care datele sunt afișate vizual. Se pot modifica formatul numeric, alinierea, fontul, bordurile, culoarea de fundal și se pot aplica reguli de formatare condiționată.</p>
+          <h3>📋 Pași de parcurs</h3>
+          <ol>
+            <li>Selectați celulele dorite și apăsați Ctrl+1 pentru Format Cells</li>
+            <li>În tab-ul Number, alegeți formatul dorit (Number, Currency, Date etc.)</li>
+            <li>În tab-ul Alignment, setați alinierea orizontală și verticală</li>
+            <li>În tab-ul Font, modificați tipul fontului, dimensiunea și culoarea</li>
+            <li>În tab-ul Border, adăugați borduri celulelor</li>
+            <li>Aplicați formatare condiționată: Home > Conditional Formatting</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDE 9 – Operații celule/rânduri -->
+    <section class="slide slide--dark" id="slide-9" data-index="8">
+      <div class="hex-deco hex-deco--bl"></div>
+      <div class="slide-inner">
+        <div class="slide-header animate-item">
+          <div class="slide-number">09 / 12</div>
+        </div>
+        <h2 class="slide-title animate-item delay-1">Operații cu celule, rânduri și coloane</h2>
+
+        <div class="ops-grid animate-item delay-2">
+
+          <div class="ops-card">
+            <div class="ops-icon ops-icon--pink">＋</div>
+            <h3>Inserare</h3>
+            <ul>
+              <li>Celule cu deplasare dreapta / jos</li>
+              <li>Rânduri: <kbd>Ctrl+Shift++</kbd></li>
+              <li>Coloane: click dreapta › Insert</li>
+            </ul>
+          </div>
+
+          <div class="ops-card">
+            <div class="ops-icon ops-icon--blue">🗑️</div>
+            <h3>Ștergere</h3>
+            <ul>
+              <li><kbd>Delete</kbd> — șterge conținut</li>
+              <li>Right-click › Delete — șterge structura</li>
+              <li>Clear All / Formats / Contents</li>
+            </ul>
+          </div>
+
+          <div class="ops-card">
+            <div class="ops-icon ops-icon--pink">↔️</div>
+            <h3>Redimensionare</h3>
+            <ul>
+              <li>Drag bordura antetului</li>
+              <li>Format › Row Height / Column Width</li>
+              <li>AutoFit: dublu-click pe bordură</li>
+            </ul>
+          </div>
+
+          <div class="ops-card">
+            <div class="ops-icon ops-icon--blue">👁️</div>
+            <h3>Ascundere / Afișare</h3>
+            <ul>
+              <li>Right-click › Hide / Unhide</li>
+              <li>Format › Hide &amp; Unhide</li>
+              <li>Coloane/rânduri invizibile, dar prezente</li>
+            </ul>
+          </div>
+
+          <div class="ops-card ops-card--wide">
+            <div class="ops-icon ops-icon--pink">⊞</div>
+            <h3>Îmbinare celule (Merge)</h3>
+            <ul class="ops-list--horizontal">
+              <li><strong>Merge &amp; Center</strong> — îmbinare + centrare conținut</li>
+              <li><strong>Merge Across</strong> — îmbinare pe fiecare rând din selecție</li>
+              <li><strong>Merge Cells</strong> — îmbinare fără centrare automată</li>
+              <li><strong>Unmerge</strong> — desfacerea celulelor îmbinate</li>
+            </ul>
+          </div>
+
+        </div>
+
+        <div class="theory-block animate-item delay-3">
+          <h3>📖 Suport teoretic</h3>
+          <p>Excel permite inserarea, ștergerea și redimensionarea celulelor, rândurilor și coloanelor. Celulele pot fi îmbinate (merge) pentru a crea anteturi sau zone vizuale mai mari.</p>
+          <h3>📋 Pași de parcurs</h3>
+          <ol>
+            <li>Inserați un rând: selectați rândul, click dreapta > Insert</li>
+            <li>Inserați o coloană: selectați coloana, click dreapta > Insert</li>
+            <li>Ștergeți conținut: selectați celulele și apăsați Delete</li>
+            <li>Redimensionați o coloană: trageți bordura antetului sau dublu-click pentru AutoFit</li>
+            <li>Ascundeți un rând: selectați rândul, click dreapta > Hide</li>
+            <li>Îmbinați celule: selectați range-ul, Home > Merge &amp; Center</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDE 10 – Protejarea datelor -->
+    <section class="slide slide--light" id="slide-10" data-index="9">
+      <div class="hex-deco hex-deco--tr"></div>
+      <div class="slide-inner">
+        <div class="slide-header animate-item">
+          <div class="slide-number">10 / 12</div>
+        </div>
+        <h2 class="slide-title animate-item delay-1">Protejarea celulelor și registrului</h2>
+
+        <div class="slide-images animate-item delay-2">
+          <img src="images/image (6).png" alt="Fereastra Format Cells - tab Protection, opțiunea Locked" loading="lazy" class="img-dialog" />
+
+        <div class="protect-layout animate-item delay-3">
+
+          <div class="protect-flow">
+            <div class="pf-step pf-step--1">
+              <span class="pf-num">1</span>
+              <div>
+                <h4>Deblocare celule</h4>
+                <p>Format Cells › Protection › <strong>dezactivați Locked</strong> pentru celulele editabile.</p>
+              </div>
+            </div>
+            <div class="pf-arrow">↓</div>
+            <div class="pf-step pf-step--2">
+              <span class="pf-num">2</span>
+              <div>
+                <h4>Protect Sheet</h4>
+                <p>Review › Protect Sheet + parolă opțională. Setați <strong>permisiunile</strong> utilizatorilor.</p>
+              </div>
+            </div>
+            <div class="pf-arrow">↓</div>
+            <div class="pf-step pf-step--3">
+              <span class="pf-num">3</span>
+              <div>
+                <h4>Protect Workbook</h4>
+                <p>Protejează structura registrului — nu se pot adăuga, șterge sau muta foi.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="protect-extra">
+            <div class="pex-card">
+              <span class="pex-icon">🔒</span>
+              <h4>Implicit</h4>
+              <p>Toate celulele sunt marcate ca <strong>Locked</strong> implicit, dar blocarea nu are efect până la activarea protecției.</p>
+            </div>
+            <div class="pex-card">
+              <span class="pex-icon">✅</span>
+              <h4>Permisiuni</h4>
+              <p>Puteți permite: selectare celule, formatare, inserare rânduri, sortare, filtrare etc.</p>
+            </div>
+            <div class="pex-card">
+              <span class="pex-icon">🏁</span>
+              <h4>Mark as Final</h4>
+              <p>Marchează fișierul ca finalizat (read-only cu notificare) — nu înlocuiește parola.</p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="theory-block animate-item delay-3">
+          <h3>📖 Suport teoretic</h3>
+          <p>Protejarea în Excel previne modificarea accidentală sau neautorizată a datelor. Implicit, toate celulele sunt marcate ca Locked, dar blocarea are efect doar după activarea protecției foii de calcul.</p>
+          <h3>📋 Pași de parcurs</h3>
+          <ol>
+            <li>Selectați celulele care trebuie să rămână editabile</li>
+            <li>Ctrl+1 > Protection > debifați "Locked"</li>
+            <li>Accesați Review > Protect Sheet</li>
+            <li>Setați o parolă (opțional) și bifați permisiunile dorite</li>
+            <li>Pentru protecția registrului: Review > Protect Workbook</li>
+            <li>Marcați ca final: File > Info > Mark as Final</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDE 11 – Imprimarea -->
+    <section class="slide slide--dark" id="slide-11" data-index="10">
+      <div class="hex-deco hex-deco--bl"></div>
+      <div class="slide-inner">
+        <div class="slide-header animate-item">
+          <div class="slide-number">11 / 12</div>
+        </div>
+        <h2 class="slide-title animate-item delay-1">Imprimarea foilor de calcul</h2>
+
+        <div class="print-grid animate-item delay-2">
+
+          <div class="print-card">
+            <div class="print-card-icon">🖨️</div>
+            <h3>Print Preview</h3>
+            <p>File › Print sau <kbd>Ctrl+P</kbd> — previzualizare completă înainte de imprimare.</p>
+          </div>
+
+          <div class="print-card">
+            <div class="print-card-icon">📐</div>
+            <h3>Print Area</h3>
+            <p>Page Layout › Print Area — setați zona exactă care va fi imprimată.</p>
+          </div>
+
+          <div class="print-card">
+            <div class="print-card-icon">📰</div>
+            <h3>Header &amp; Footer</h3>
+            <p>Insert › Header &amp; Footer — adăugați număr pagină, dată, logo pe fiecare pagină.</p>
+          </div>
+
+          <div class="print-card">
+            <div class="print-card-icon">🔁</div>
+            <h3>Titluri de imprimat</h3>
+            <p>Page Layout › Print Titles — repetare rânduri/coloane cu anteturi pe fiecare pagină.</p>
+          </div>
+
+          <div class="print-card">
+            <div class="print-card-icon">✂️</div>
+            <h3>Page Break</h3>
+            <p>Inserare manuală a salturilor de pagină — Page Layout › Breaks › Insert Page Break.</p>
+          </div>
+
+          <div class="print-card">
+            <div class="print-card-icon">⚙️</div>
+            <h3>Setări imprimare</h3>
+            <p>Linii grile, anteturi rând/coloană, comentarii, ordine pagini, alb-negru.</p>
+          </div>
+
+        </div>
+
+        <div class="theory-block animate-item delay-3">
+          <h3>📖 Suport teoretic</h3>
+          <p>Înainte de a imprima o foaie de calcul, este important să verificați previzualizarea, să setați zona de imprimare și să configurați anteturile, subsolurile și titlurile care se repetă pe fiecare pagină.</p>
+          <h3>📋 Pași de parcurs</h3>
+          <ol>
+            <li>Apăsați Ctrl+P pentru Print Preview</li>
+            <li>Setați zona de imprimare: selectați range-ul > Page Layout > Print Area > Set Print Area</li>
+            <li>Adăugați antet/subsol: Insert > Header &amp; Footer</li>
+            <li>Setați titluri repetate: Page Layout > Print Titles > Rows to repeat at top</li>
+            <li>Inserați salt de pagină: Page Layout > Breaks > Insert Page Break</li>
+            <li>Verificați setările (linii grile, alb-negru) și imprimați</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDE 12 – Parametrii paginii -->
+    <section class="slide slide--light" id="slide-12" data-index="11">
+      <div class="hex-deco hex-deco--tr"></div>
+      <div class="slide-inner">
+        <div class="slide-header animate-item">
+          <div class="slide-number">12 / 12</div>
+        </div>
+        <h2 class="slide-title animate-item delay-1">Setarea parametrilor paginii</h2>
+
+        <div class="slide-image slide-image--wide animate-item delay-2">
+          <img src="images/image (7).png" alt="Tab Page Layout din Excel - Ribbon cu opțiunile de configurare pagină" loading="lazy" />
+        </div>
+
+        <div class="page-params animate-item delay-3">
+
+          <div class="pp-row">
+            <div class="pp-item">
+              <div class="pp-visual pp-visual--size">
+                <div class="pp-page">A4</div>
+              </div>
+              <h3>Dimensiunea paginii</h3>
+              <p>A4, Letter, Legal și altele — Page Layout › Size.</p>
+            </div>
+
+            <div class="pp-item">
+              <div class="pp-visual">
+                <div class="pp-orient pp-orient--portrait">P</div>
+                <div class="pp-orient pp-orient--landscape">L</div>
+              </div>
+              <h3>Orientare</h3>
+              <p><strong>Portrait</strong> (vertical) sau <strong>Landscape</strong> (orizontal).</p>
+            </div>
+
+            <div class="pp-item">
+              <div class="pp-visual pp-visual--margin">
+                <div class="pp-margin-box"></div>
+              </div>
+              <h3>Margini</h3>
+              <p>Normal, Narrow, Wide sau personalizate (cm / inch).</p>
+            </div>
+          </div>
+
+          <div class="pp-row">
+            <div class="pp-item">
+              <div class="pp-visual">
+                <span class="pp-icon">📏</span>
+              </div>
+              <h3>Scalare</h3>
+              <p>Ajustare la X pagini lățime × Y pagini înălțime. Fit to Page.</p>
+            </div>
+
+            <div class="pp-item">
+              <div class="pp-visual">
+                <span class="pp-icon">✂️</span>
+              </div>
+              <h3>Page Breaks</h3>
+              <p>Vizualizare și manipulare salturi — Page Break Preview.</p>
+            </div>
+
+            <div class="pp-item">
+              <div class="pp-visual">
+                <span class="pp-icon">🔁</span>
+              </div>
+              <h3>Print Titles</h3>
+              <p>Rânduri/coloane repetate pe fiecare pagină tipărită.</p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="theory-block animate-item delay-3">
+          <h3>📖 Suport teoretic</h3>
+          <p>Parametrii paginii controlează modul în care foaia de calcul va fi imprimată: dimensiunea hârtiei, orientarea, marginile, scalarea și salturile de pagină. Aceste setări sunt accesibile din tab-ul Page Layout.</p>
+          <h3>📋 Pași de parcurs</h3>
+          <ol>
+            <li>Accesați tab-ul Page Layout din Ribbon</li>
+            <li>Setați dimensiunea: Page Layout > Size > A4 (sau alta)</li>
+            <li>Alegeți orientarea: Portrait (vertical) sau Landscape (orizontal)</li>
+            <li>Configurați marginile: Page Layout > Margins > Normal/Narrow/Wide/Custom</li>
+            <li>Scalați conținutul: Page Layout > Scale to Fit > Width/Height</li>
+            <li>Gestionați salturile: View > Page Break Preview pentru a trage salturile de pagină</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+        <!-- SLIDE 13 – Parametrii paginii -->
+          <section class="slide slide--dark" id="slide-11" data-index="10">
+      <div class="hex-deco hex-deco--bl"></div>
+      <div class="slide-inner">
+        <div class="slide-header animate-item">
+          <div class="slide-number">12 / 12</div>
+
+        </div>
+      
+
+<img src="images/mlatentie.jpg" alt="Imprimarea foilor de calcul">
+         
+
+        
+    </section>
+
+
+    
+  </main>
+
+  <!-- ===== NAVIGATION ARROWS ===== -->
+  <button class="nav-arrow nav-arrow--prev" id="btn-prev" aria-label="Slide anterior">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="15 18 9 12 15 6"></polyline>
+    </svg>
+  </button>
+  <button class="nav-arrow nav-arrow--next" id="btn-next" aria-label="Slide următor">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+  </button>
+
+  <!-- ===== SLIDE INDICATORS ===== -->
+  <nav class="slide-dots" id="slide-dots" aria-label="Navigare slide-uri">
+  </nav>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
